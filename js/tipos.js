@@ -4,14 +4,14 @@
  */
 
 /**
- * @typedef {Object} Pasatiempo
+ * @typedef {Object} Lugar
  * @property {string} nombre
  */
 
 /**
  * @typedef {Object} Usuario
  * @property {string[]} rolIds
- * @property {string} pasatiempoId
+ * @property {string} lugarId
  */
 
 // @ts-nocheck
