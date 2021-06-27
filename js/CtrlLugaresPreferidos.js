@@ -15,7 +15,7 @@ const lista = document.
   querySelector("#lista");
 const daoLugar =
   getFirestore().
-    collection("Pasatiempo");
+    collection("Lugar");
 
 getAuth().
   onAuthStateChanged(
@@ -64,7 +64,7 @@ function htmlLista(snap) {
 function htmlFila(doc) {
   /**
    * @type {import("./tipos.js").
-                  Pasatiempo} */
+                  Lugar} */
   const data = doc.data();
   const nombre = cod(data.nombre);
   const parámetros =
