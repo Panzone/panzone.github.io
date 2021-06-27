@@ -117,17 +117,17 @@ async function htmlFila(doc) {
  * pasatiempo en base a su id.
  * @param {string} id */
 async function
-  buscaPasatiempo(id) {
+  buscaLugar(id) {
   if (id) {
     const doc =
-      await daoPasatiempo.
+      await daoLugar.
         doc(id).
         get();
     if (doc.exists) {
       /**
        * @type {import(
           "./tipos.js").
-            Pasatiempo} */
+            Lugar} */
       const data = doc.data();
       return (/* html */
         `${cod(data.nombre)}`);
