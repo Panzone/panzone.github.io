@@ -114,7 +114,7 @@ async function htmlFila(doc) {
 }
 
 /** Recupera el html de un
- * pasatiempo en base a su id.
+ * lugar en base a su id.
  * @param {string} id */
 async function
   buscaLugar(id) {
