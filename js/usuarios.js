@@ -20,7 +20,7 @@ const firestore = getFirestore();
 const daoRol = firestore.
   collection("Rol");
 const daoLugar = firestore.
-  collection("Pasatiempo");
+  collection("Lugar");
 const daoUsuario = firestore.
   collection("Usuario");
 
@@ -147,15 +147,15 @@ export async function
     id) {
   try {
     evt.preventDefault();
-    const pasatiempoId =
+    const lugarId =
       getForánea(formData,
-        "pasatiempoId");
+        "lugarId");
     const rolIds =
       formData.getAll("rolIds");
     await daoUsuario.
       doc(id).
       set({
-        pasatiempoId,
+        lugarId,
         rolIds
       });
     const avatar =
