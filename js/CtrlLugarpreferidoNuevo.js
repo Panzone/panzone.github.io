@@ -15,7 +15,7 @@ import {
 
 const daoLugar =
   getFirestore().
-    collection("Pasatiempo");
+    collection("Lugar");
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
 getAuth().onAuthStateChanged(
@@ -43,7 +43,7 @@ async function guarda(evt) {
     /**
      * @type {
         import("./tipos.js").
-                Pasatiempo} */
+                Lugar} */
     const modelo = {
       nombre
     };
