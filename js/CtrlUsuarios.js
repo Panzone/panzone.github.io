@@ -19,7 +19,7 @@ const lista = document.
 const firestore = getFirestore();
 const daoRol = firestore.
   collection("Rol");
-const daoPasatiempo = firestore.
+const daoLugar = firestore.
   collection("Lugar");
 const daoUsuario = firestore.
   collection("Usuario");
