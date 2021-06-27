@@ -58,8 +58,8 @@ async function busca() {
       img.src =
         await urlStorage(id);
       selectPasatiempos(
-        forma.pasatiempoId,
-        data.pasatiempoId)
+        forma.lugarId,
+        data.lugarId)
       checksRoles(
         listaRoles, data.rolIds);
       forma.addEventListener(
