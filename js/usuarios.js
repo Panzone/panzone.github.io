@@ -62,7 +62,7 @@ function
       "selected" : "";
   /**
    * @type {import("./tipos.js").
-                  Pasatiempo} */
+                  Lugar} */
   const data = doc.data();
   return (/* html */
     `<option
