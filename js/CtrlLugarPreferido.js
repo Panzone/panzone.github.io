@@ -15,7 +15,7 @@ import {
 
 const daoLugar =
   getFirestore().
-    collection("Pasatiempo");
+    collection("Lugar");
 const params =
   new URL(location.href).
     searchParams;
@@ -48,7 +48,7 @@ async function busca() {
       /**
        * @type {
           import("./tipos.js").
-                  Pasatiempo} */
+                  Lugar} */
       const data = doc.data();
       forma.nombre.value =
         data.nombre || "";
@@ -78,7 +78,7 @@ async function guarda(evt) {
     /**
      * @type {
         import("./tipos.js").
-                Pasatiempo} */
+                  Lugar} */
     const modelo = {
       nombre
     };
